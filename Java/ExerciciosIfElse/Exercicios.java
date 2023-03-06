@@ -94,44 +94,69 @@ public class Exercicios {
 
     public void exercicio7() {
         System.out.println("=========================================");
-        System.out.println("Informe o valor da Nota 1? ");
+        System.out.println("Informe o valor da Nota 1. ");
         int Nota1 = sc.nextInt();
-        System.out.println("Informe valor da Nota 2? ");
+        System.out.println("Informe valor da Nota 2.");
         int Nota2 = sc.nextInt();
 
         System.out.println("========================================");
         double media = (Nota1 + Nota2) / 2;
         System.out.println("A media do Aluno é >> " + media);
 
-        if (media>=50) {
+        if (media >= 50) {
             System.out.println("O aluno está aprovado por nota!");
         } else {
             System.out.println("O aluno está reprovado por nota!");
         }
 
         System.out.println("========================================");
-        System.out.println("Informe a frequência do Aluno? >> ");
+        System.out.println("Informe a frequência do Aluno. ");
         int frequencia = sc.nextInt();
 
-        if (frequencia>=75) {
-            System.out.println("O aluno está aprovado por nota!");
+        if (frequencia >= 75) {
+            System.out.println("O aluno está aprovado por freqência!");
         } else {
-            System.out.println("O aluno está reprovado por nota!");
+            System.out.println("O aluno está reprovado por frequência!");
         }
-        
-        if (media>=50 && frequencia>=75) {
-            
+        System.out.println("========================================");
+        if (media >= 50 && frequencia >= 75) {
+            System.out.println("<<O aluno está aprovado no Curso!>>");
         } else {
-            
+            System.out.println("<<O aluno está reprovado no Curso!>>");
         }
-        System.out.println("=========================================");
-        boolean frequenciaAprovado = frequencia >= 75;
-        System.out.println("O aluno está aprovado por frequência? >> " + frequenciaAprovado);
+    }
 
-        System.out.println("=========================================");
-        boolean aprovacaoFinal = mediaAprovado && frequenciaAprovado;
-        System.out.println("O aluno está aprovado no Curso? >> " + aprovacaoFinal);
+    public void exercicio8() {
+        System.out.println("Informe um número Inteiro");
+        int numero = sc.nextInt();
 
-        System.out.println("=========================================");
+        double restoDivisao = numero % 2.0;
+        ;
+
+        if (restoDivisao == 0) {
+            System.out.println("O Número (" + numero + ") é Par!");
+        } else {
+            System.out.println("O Número (" + numero + ") é Ímpar!");
+        }
+    }
+    public void exercicio9() {
+        System.out.println("Informe sua Nota");
+        double nota = sc.nextDouble();
+        if (nota>=7) {
+            System.out.println("Passou direto!");
+        } else if (nota>=5 && nota<7) {
+            System.out.println("Têm direito de fazer uma prova de recuperação!");
+        } else{
+            System.out.println("Reprovado direto!");
+        }
+    }
+    public void exercicio10() {
+        System.out.println("Informe uma letra (em MAIÚSCULO) do Alfabeto");
+        String letra=sc.next();
+       if (letra==A && letra==E ) {
+            System.out.println("A letra informada é uma VOGAL!");
+        } else {
+            System.out.println("A letra informada é uma CONSOANTE!");
+        }
     }
 }
