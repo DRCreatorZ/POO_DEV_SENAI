@@ -139,24 +139,17 @@ public class Exercicios {
             System.out.println("O Número (" + numero + ") é Ímpar!");
         }
     }
+
     public void exercicio9() {
         System.out.println("Informe sua Nota");
         double nota = sc.nextDouble();
-        if (nota>=7) {
+        if (nota >= 7) {
             System.out.println("Passou direto!");
-        } else if (nota>=5 && nota<7) {
+        } else if (nota >= 5 && nota < 7) {
             System.out.println("Têm direito de fazer uma prova de recuperação!");
-        } else{
+        } else {
             System.out.println("Reprovado direto!");
         }
     }
-    public void exercicio10() {
-        System.out.println("Informe uma letra (em MAIÚSCULO) do Alfabeto");
-        String letra=sc.next();
-       if (letra==A && letra==E ) {
-            System.out.println("A letra informada é uma VOGAL!");
-        } else {
-            System.out.println("A letra informada é uma CONSOANTE!");
-        }
-    }
+
 }
